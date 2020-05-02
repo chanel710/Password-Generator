@@ -3,27 +3,25 @@
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: blueviolet;
+    background-color: rgb(146, 144, 148);
     width:100%;
 }
 
-.container {
+.wrapper {
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: lightgray;
     padding: 20px;
     width: 100px;   
-    height: 600px;
+    height: 100px;
+    background-color: lightgreen;
 }
 
-.card
+.card-body {
+    background-color: lightgray;
+   
+}
 
 #display {
     width: 100%;
-}
-   
-#slider {
-    width:100%
-}
 
 }
