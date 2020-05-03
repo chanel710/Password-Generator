@@ -1,88 +1,4 @@
-    
-    function generatePassword() {
-    
-// Special characters for the function created
 
-var lowercase  = 'abcdefghijklmnopqrstuvwxyz';
-var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXY';
-var numbers = '0123456789';
-var symbols = '!"#$%&\'()*+,-./:;<=>?@^[\\]^_`{|}~';
-var values = 'lowercase + uppercase + numbers + symbols';
-var password = '';
-
-// Prompts that come up after you click generate password
-function generatePassword() {
-
-  alert("Welcome to Password Generator");
-
-  varconfirmPassword = confirm("Please select the length of your password greater than 8 values.");
-
-  varconfirmNumbers = confirm("Do you want numbers in your password?");
-
-  varconfirmLowerCase = confirm("Do you want lowercases in your password?");
-
-  varconfirmUppercase = confirm("Do you want uppercases in your password?");
-
-  varconfirmSymbols = confirm("Do you want special characters in your password?");
-
-} else if (upperCase && lowerCase && special) {
-  characters = upper.concat(lower, symbol);
-
-} else if (upperCase && lowerCase && numbers) {
-  characters = upper.concat(lower, num);      
-
-} else if (upperCase && special && numbers) {
-  characters = upper.concat(special, num);
-
-} else if (lowerCase && special && numbers) {
-  characters = lower.concat(special, num);
-
-
-// For passwords containing only two characters
-} else if (upperCase && lowerCase) {
-  characters = upper.concat(lower);
-
-} else if (upperCase && special) {
-  characters = upper.concat(symbol);
-
-} else if (upperCase && numbers) {
-  characters = upper.concat(num);
-
-} else if (lowerCase && special) {
-  characters = lower.concat(symbol);
-
-} else if (lowerCase && numbers) {
-  characters = lower.concat(num);
-
-} else if (special && numbers) {
-  characters = symbol.concat(number);
-
-
-// For passwords containing only one symbol
-} else if (upperCase) {
-  characters = upper;
-
-} else if (lowerCase) {
-  characters = lower;
-
-} else if (special) {
-  characters = symbol;
-
-} else if (numbers) {
-  characters = num;
-};
-
-
-///Loop
-var pw = ''
-for (vari = 0; i <= length; i++) {
-{password = password + values.charAt(Math.floor(Math.random() * Math.floor(value.length - 1)));
-}
-///
-    var password = pw.join("");
-    return password;
-}
-var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
@@ -90,6 +6,54 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+
 }
+var lowercase  = 'abcdefghijklmnopqrstuvwxyz';
+var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXY';
+var numbers = '0123456789';
+var symbols = '!"#$%&\'()*+,-./:;<=>?@^[\\]^_`{|}~';
+var values = 'lowercase + uppercase + numbers + symbols';
+var password = '';
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+function generatePassword() {
+
+  alert("Welcome to Password Generator");
+
+//ask for length
+var length = prompt("How many characters will your password be? Enter a number between 8 and 128");
+
+//ask for character type
+var charType = prompt("Enter a character type: special, numeric, uppercase, lowercase.");
+
+//generate password
+function generatePassword() {
+  //evaluate character type
+  var charSet = "";
+  if( charType.toLowerCase === "lowercase" ) {
+    charSet = "abcdefghijklmnopqrstuvwxyz";
+  } else if( charTypeLower () === "uppercase" ) {
+    charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  } else if( charTypeLower () === "numeric" ) {
+    charSet = "0123456789";
+  } else if( charTypeLower () === "special" ) {
+    charSet = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  } 
+  //return value
+  var retVal = "";
+  //for (var i = 0, n = charSet.length; i < length; i++) {
+    for (var i = 0; i < length; i++) {
+    password += charSet.charAt (math.floor (math.random() + charSet.length));
+    //picks a character within charSet at index of random number
+    retVal += charSet.charAt(Math.floor(Math.random() * charSet.length));
+  }
+  return password;
+  }
+
+///button setp to HTML
+
+
+alert(generatePassword());
+}
