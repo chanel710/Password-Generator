@@ -1,6 +1,4 @@
 # Password-Generator
 Random Password Generator 
 
-My password generator was not able to function. I went through a lot different routes to try achieve this, however I had quite bit of trouble. 
-
-This is what I have so far. The prompts were not able to generate. 
+My second attempt I did get farther. My return value did not pop up however I was able to get the prompts. The most I learned through this homework was the different loops and funcitons. I also initally created a different Generate Password  Web Page which you can see from my earlier commits. However, it was not funcitonal with my jss file. I did spend a lot of time with this homeworkd and the output was not what i had hoped for which is frustrating. I did a lot of research and tried many different methods to get password to generate. Although, this may not reflect in my grade I did learn quite a bit. Another lesson learned for me honestly, was commiting my work often. I lost part of it on Friday, which if I had commit my stopping point, it would not have put me behind. Big lesson learned and understandable why there needs to be multiple commits on each homework. 
